@@ -120,7 +120,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     )
     .unwrap();
 
-    let shader = cs2::load(device.clone()).unwrap();
+    let shader = cs::load(device.clone()).unwrap();
 
     let compute_pipeline = ComputePipeline::new(
         device.clone(),
